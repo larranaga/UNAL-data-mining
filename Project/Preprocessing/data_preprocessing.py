@@ -100,4 +100,16 @@ for name in names:
     videogames_data.drop(videogames_data[videogames_data["Name"] == name].index, inplace=True)
     videogames_data = videogames_data.append(new_data)
 
-videogames_data.to_csv("processed_videogames_data.csv")
+videogames_data["User_Count"] = videogames_data["User_Count"].astype(int)
+videogames_data["Year_of_Release"] = videogames_data["Year_of_Release"].astype(int)
+videogames_data["Critic_Count"] = videogames_data["Critic_Count"].astype(int)
+
+videogames_data.drop('Platform', 1, inplace=True)
+
+videogames_data["Global_Sales"] = videogames_data["Global_Sales"]*1000000
+videogames_data["JP_Sales"] = videogames_data["JP_Sales"]*1000000
+videogames_data["NA_Sales"] = videogames_data["NA_Sales"]*1000000
+videogames_data["Other_Sales"] = videogames_data["Other_Sales"]*1000000
+videogames_data["EU_Sales"] = videogames_data["EU_Sales"]*1000000
+
+videogames_data.to_csv("processed_videogames_data.csv", index=False)
