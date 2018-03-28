@@ -36,23 +36,8 @@ def remove_zero_from_critic(entry):
     return entry["Critic_Score"]
 
 
-videogames_data = pd.read_csv("processed_videogames_data_3.csv")
-videogames_data.drop('Number_of_Records', 1, inplace=True)
-videogames_data["NA_Sales"] = videogames_data.apply(lambda entry : entry["NA_Sales"].replace("K", "000"), axis=1)
-videogames_data["NA_Sales"] = videogames_data["NA_Sales"].astype(int)
-
-videogames_data["EU_Sales"] = videogames_data.apply(lambda entry : entry["EU_Sales"].replace("K", "000"), axis=1)
-videogames_data["EU_Sales"] = videogames_data["EU_Sales"].astype(int)
-
-videogames_data["JP_Sales"] = videogames_data.apply(lambda entry : entry["JP_Sales"].replace("K", "000"), axis=1)
-videogames_data["JP_Sales"] = videogames_data["JP_Sales"].astype(int)
-
-videogames_data["Other_Sales"] = videogames_data.apply(lambda entry : entry["Other_Sales"].replace("K", "000"), axis=1)
-videogames_data["Other_Sales"] = videogames_data["Other_Sales"].astype(int)
-
-videogames_data["Global_Sales"] = videogames_data["NA_Sales"] + videogames_data["EU_Sales"] \
-                                + videogames_data["JP_Sales"] + videogames_data["Other_Sales"]
-
+videogames_data = pd.read_csv("processed_videogames_data.csv")
+#videogames_data.drop('Number_of_Records', 1, inplace=True)
 
 developers = videogames_data["Developer"].unique()
 
@@ -63,7 +48,6 @@ for developer in developers:
         "critic_score": 0.0,
         "critic_count": 0
     }
-
 
 for index, entry in videogames_data.iterrows():
     if entry["User_Score"] != 0.0:
@@ -91,26 +75,64 @@ videogames_data["User_Score"] = videogames_data.apply(remove_zero_from_user, axi
 videogames_data["Critic_Score"].fillna(videogames_data["User_Score"],inplace=True)
 videogames_data["User_Score"].fillna(videogames_data["Critic_Score"],inplace=True)
 
-print(videogames_data.describe())
+#print(videogames_data.describe())
 
-videogames_data["Rating"] = pd.factorize(videogames_data["Rating"])[0]
-videogames_data["Developer"] = pd.factorize(videogames_data["Developer"])[0]
-videogames_data["Publisher"] = pd.factorize(videogames_data["Publisher"])[0]
-videogames_data["Genre"] = pd.factorize(videogames_data["Genre"])[0]
+#videogames_data["Rating"] = pd.factorize(videogames_data["Rating"])[0]
 
-names = videogames_data["Name"]
+target = pd.DataFrame()
+target["Name"] = videogames_data["Name"]
+target["NA_Sales"] = videogames_data["NA_Sales"]
+target["JP_Sales"] = videogames_data["JP_Sales"]
+target["EU_Sales"] = videogames_data["EU_Sales"]
+target["Other_Sales"] = videogames_data["Other_Sales"]
+target["Global_Sales"] = videogames_data["Global_Sales"]
+
+videogames_data_categorical = pd.DataFrame()
+videogames_data_categorical["Rating"] = videogames_data["Rating"]
+videogames_data_categorical["Developer"] = videogames_data["Developer"]
+videogames_data_categorical["Publisher"] = videogames_data["Publisher"]
+videogames_data_categorical["Genre"] = videogames_data["Genre"]
+
 videogames_data.drop("Name",1, inplace=True )
-pca = PCA(n_components=4)
+videogames_data.drop("Rating",1, inplace=True )
+videogames_data.drop("Developer",1, inplace=True )
+videogames_data.drop("Publisher",1, inplace=True )
+videogames_data.drop("Genre",1, inplace=True )
+videogames_data.drop("NA_Sales",1, inplace=True )
+videogames_data.drop("JP_Sales",1, inplace=True )
+videogames_data.drop("EU_Sales",1, inplace=True )
+videogames_data.drop("Other_Sales",1, inplace=True )
+videogames_data.drop("Global_Sales",1, inplace=True )
 
-pca_info = pca.fit(videogames_data)
+videogames_data_ordinal = videogames_data
+
+#print( videogames_data_ordinal.describe() )
+#print( )
+#print( target.describe() )
+pca = PCA(n_components=3)
+
+pca_info = pca.fit(videogames_data_ordinal)
 
 print(pca_info.components_)
 print()
 
 for explanation in pca_info.explained_variance_ratio_.cumsum():
-    print(explanation)
+   print(explanation)
 
-videogames_data = pca.fit(videogames_data).transform(videogames_data)
+videogames_data = pca.fit(videogames_data_ordinal).transform(videogames_data_ordinal)
 
 csv_data = pd.DataFrame(videogames_data)
+csv_data["Name"] = target["Name"].tolist()
+csv_data["NA_Sales"] = target["NA_Sales"].tolist()
+csv_data["JP_Sales"] = target["JP_Sales"].tolist()
+csv_data["EU_Sales"] = target["EU_Sales"].tolist()
+csv_data["Other_Sales"] = target["Other_Sales"].tolist()
+csv_data["Global_Sales"] = target["Global_Sales"].tolist()
+csv_data["Rating"] = videogames_data_categorical["Rating"].tolist()
+csv_data["Developer"] = videogames_data_categorical["Developer"].tolist()
+csv_data["Publisher"] = videogames_data_categorical["Publisher"].tolist()
+csv_data["Genre"] = videogames_data_categorical["Genre"].tolist()
+
+print( csv_data )
+
 csv_data.to_csv("complete_processed_videogames_data.csv", index=False, header=False)
