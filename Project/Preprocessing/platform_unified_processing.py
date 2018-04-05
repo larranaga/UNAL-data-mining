@@ -36,6 +36,99 @@ def remove_zero_from_critic(entry):
     return entry["Critic_Score"]
 
 
+def categorize_critic_score(entry):
+    score = entry["Critic_Score"]
+    if score > 7.5:
+        return "High"
+    elif score > 5:
+        return "Medium"
+    elif score > 2.5:
+        return "Low"
+    else:
+        return "Worst"
+
+
+def categorize_user_score(entry):
+    score = entry["User_Score"]
+    if score > 7.5:
+        return "High"
+    elif score > 5:
+        return "Medium"
+    elif score > 2.5:
+        return "Low"
+    else:
+        return "Worst"
+
+
+def categorize_na_sales(entry):
+    top = videogames_data["NA_Sales"].max()
+    sales = entry["NA_Sales"]
+    delta = top/4.0
+    if sales > top - delta:
+        return "High"
+    elif sales > top - 2*delta:
+        return "Medium"
+    elif sales > top - 3*delta:
+        return "Low"
+    else:
+        return "Worst"
+
+
+def categorize_jp_sales(entry):
+    top = videogames_data["JP_Sales"].max()
+    sales = entry["JP_Sales"]
+    delta = top/4.0
+    if sales > top - delta:
+        return "High"
+    elif sales > top - 2*delta:
+        return "Medium"
+    elif sales > top - 3*delta:
+        return "Low"
+    else:
+        return "Worst"
+
+
+def categorize_eu_sales(entry):
+    top = videogames_data["EU_Sales"].max()
+    sales = entry["EU_Sales"]
+    delta = top/4.0
+    if sales > top - delta:
+        return "High"
+    elif sales > top - 2*delta:
+        return "Medium"
+    elif sales > top - 3*delta:
+        return "Low"
+    else:
+        return "Worst"
+
+
+def categorize_other_sales(entry):
+    top = videogames_data["Other_Sales"].max()
+    sales = entry["Other_Sales"]
+    delta = top/4.0
+    if sales > top - delta:
+        return "High"
+    elif sales > top - 2*delta:
+        return "Medium"
+    elif sales > top - 3*delta:
+        return "Low"
+    else:
+        return "Worst"
+
+
+def categorize_global_sales(entry):
+    top = videogames_data["Global_Sales"].max()
+    sales = entry["Global_Sales"]
+    delta = top/4.0
+    if sales > top - delta:
+        return "High"
+    elif sales > top - 2*delta:
+        return "Medium"
+    elif sales > top - 3*delta:
+        return "Low"
+    else:
+        return "Worst"
+
 videogames_data = pd.read_csv("processed_videogames_data.csv")
 #videogames_data.drop('Number_of_Records', 1, inplace=True)
 
@@ -79,6 +172,19 @@ videogames_data["User_Score"].fillna(videogames_data["Critic_Score"],inplace=Tru
 
 #videogames_data["Rating"] = pd.factorize(videogames_data["Rating"])[0]
 
+videogames_data["Nominal_Critic_Score"] = videogames_data.apply(categorize_critic_score, axis=1)
+videogames_data["Nominal_User_Score"] = videogames_data.apply(categorize_user_score, axis=1)
+videogames_data["Nominal_NA_Sales"] = videogames_data.apply(categorize_na_sales, axis=1)
+videogames_data["Nominal_JP_Sales"] = videogames_data.apply(categorize_jp_sales, axis=1)
+videogames_data["Nominal_EU_Sales"] = videogames_data.apply(categorize_eu_sales, axis=1)
+videogames_data["Nominal_Other_Sales"] = videogames_data.apply(categorize_other_sales, axis=1)
+videogames_data["Nominal_Global_Sales"] = videogames_data.apply(categorize_global_sales, axis=1)
+
+
+
+videogames_data.to_csv("complete_processed_nominal_videogames_data.csv", index=False, header=True)
+
+
 target = pd.DataFrame()
 target["Name"] = videogames_data["Name"]
 target["NA_Sales"] = videogames_data["NA_Sales"]
@@ -103,6 +209,13 @@ videogames_data.drop("JP_Sales",1, inplace=True )
 videogames_data.drop("EU_Sales",1, inplace=True )
 videogames_data.drop("Other_Sales",1, inplace=True )
 videogames_data.drop("Global_Sales",1, inplace=True )
+videogames_data.drop("Nominal_Critic_Score",1, inplace=True )
+videogames_data.drop("Nominal_User_Score",1, inplace=True )
+videogames_data.drop("Nominal_Global_Sales",1, inplace=True )
+videogames_data.drop("Nominal_Other_Sales",1, inplace=True )
+videogames_data.drop("Nominal_NA_Sales",1, inplace=True )
+videogames_data.drop("Nominal_JP_Sales",1, inplace=True )
+videogames_data.drop("Nominal_EU_Sales",1, inplace=True )
 
 videogames_data_ordinal = videogames_data
 
@@ -113,8 +226,8 @@ pca = PCA(n_components=3)
 
 pca_info = pca.fit(videogames_data_ordinal)
 
-print(pca_info.components_)
-print()
+#print(pca_info.components_)
+#print()
 
 for explanation in pca_info.explained_variance_ratio_.cumsum():
    print(explanation)
@@ -133,6 +246,5 @@ csv_data["Developer"] = videogames_data_categorical["Developer"].tolist()
 csv_data["Publisher"] = videogames_data_categorical["Publisher"].tolist()
 csv_data["Genre"] = videogames_data_categorical["Genre"].tolist()
 
-print( csv_data )
+csv_data.to_csv("complete_processed_videogames_data.csv", index=False, header=True)
 
-csv_data.to_csv("complete_processed_videogames_data.csv", index=False, header=False)
