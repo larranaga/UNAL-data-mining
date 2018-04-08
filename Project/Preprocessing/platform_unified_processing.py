@@ -38,11 +38,11 @@ def remove_zero_from_critic(entry):
 
 def categorize_critic_score(entry):
     score = entry["Critic_Score"]
-    if score > 7.5:
+    if score > 8.5:
         return "High"
-    elif score > 5:
+    elif score > 6:
         return "Medium"
-    elif score > 2.5:
+    elif score > 4:
         return "Low"
     else:
         return "Worst"
@@ -50,84 +50,93 @@ def categorize_critic_score(entry):
 
 def categorize_user_score(entry):
     score = entry["User_Score"]
-    if score > 7.5:
+    if score > 8.5:
         return "High"
-    elif score > 5:
+    elif score > 6:
         return "Medium"
-    elif score > 2.5:
+    elif score > 4:
         return "Low"
     else:
         return "Worst"
 
 
 def categorize_na_sales(entry):
-    top = videogames_data["NA_Sales"].max()
     sales = entry["NA_Sales"]
-    delta = top/4.0
-    if sales > top - delta:
-        return "High"
-    elif sales > top - 2*delta:
-        return "Medium"
-    elif sales > top - 3*delta:
-        return "Low"
-    else:
-        return "Worst"
+    top = 10000000
+    if sales > top:
+        return "Top"
+    category = 0
+    delta = 500000
+    low = 500000
+    for i in range(low, top + 1, delta):
+        if(sales >= i - delta and sales <= i):
+            return str(category)
+        category+=1
+    return "error"
 
 
 def categorize_jp_sales(entry):
-    top = videogames_data["JP_Sales"].max()
     sales = entry["JP_Sales"]
-    delta = top/4.0
-    if sales > top - delta:
-        return "High"
-    elif sales > top - 2*delta:
-        return "Medium"
-    elif sales > top - 3*delta:
-        return "Low"
-    else:
-        return "Worst"
+    top = 5000000
+    if sales > top:
+        return "Top"
+    category = 0
+    delta = 500000
+    low = 500000
+    for i in range(low, top + 1, delta):
+        if sales >= i - delta and sales <= i:
+            return str(category) + "c"
+        category += 1
+    return "error"
 
 
 def categorize_eu_sales(entry):
-    top = videogames_data["EU_Sales"].max()
     sales = entry["EU_Sales"]
-    delta = top/4.0
-    if sales > top - delta:
-        return "High"
-    elif sales > top - 2*delta:
-        return "Medium"
-    elif sales > top - 3*delta:
-        return "Low"
-    else:
-        return "Worst"
+    top = 10000000
+    if sales > top:
+        return "Top"
+    category = 0
+    delta = 500000
+    low = 500000
+    for i in range(low, top + 1, delta):
+        if (sales >= i - delta and sales <= i):
+            return str(category)
+        category += 1
+    return "error"
 
 
 def categorize_other_sales(entry):
-    top = videogames_data["Other_Sales"].max()
     sales = entry["Other_Sales"]
-    delta = top/4.0
-    if sales > top - delta:
-        return "High"
-    elif sales > top - 2*delta:
-        return "Medium"
-    elif sales > top - 3*delta:
-        return "Low"
-    else:
-        return "Worst"
+    top = 2500000
+    if sales > top:
+        return "Top"
+    category = 0
+    delta = 500000
+    low = 500000
+    for i in range(low, top + 1, delta):
+        if sales >= i - delta and sales <= i:
+            return str(category)
+        category += 1
+    return "error"
 
 
 def categorize_global_sales(entry):
-    top = videogames_data["Global_Sales"].max()
     sales = entry["Global_Sales"]
-    delta = top/4.0
-    if sales > top - delta:
-        return "High"
-    elif sales > top - 2*delta:
-        return "Medium"
-    elif sales > top - 3*delta:
-        return "Low"
-    else:
-        return "Worst"
+    top = 15000000
+    if sales > top:
+        return "Top"
+    category = 0
+    delta = 50000
+    low = 50000
+    for i in range(low, top + 1, delta):
+        if (sales >= i - delta and sales <= i):
+            return str(category)
+        category += 1
+    print("error")
+    print(entry.Name)
+    print(sales)
+    print(sales + 1)
+    return "error"
 
 videogames_data = pd.read_csv("processed_videogames_data.csv")
 #videogames_data.drop('Number_of_Records', 1, inplace=True)
@@ -179,8 +188,6 @@ videogames_data["Nominal_JP_Sales"] = videogames_data.apply(categorize_jp_sales,
 videogames_data["Nominal_EU_Sales"] = videogames_data.apply(categorize_eu_sales, axis=1)
 videogames_data["Nominal_Other_Sales"] = videogames_data.apply(categorize_other_sales, axis=1)
 videogames_data["Nominal_Global_Sales"] = videogames_data.apply(categorize_global_sales, axis=1)
-
-
 
 videogames_data.to_csv("complete_processed_nominal_videogames_data.csv", index=False, header=True)
 
