@@ -1,0 +1,22 @@
+=== Run information ===
+
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 1000 -T 0 -C 0.2 -D 0.05 -U 1.0 -M 0.6
+Relation:     complete_processed_nominal_videogames_data-weka.filters.unsupervised.attribute.Remove-R1-2,4,6-8,10,13-14,18-21-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.Remove-R3-weka.filters.unsupervised.attribute.NominalToBinary-N-Rfirst-last
+Instances:    8935
+Attributes:   1890
+              [list of attributes omitted]
+=== Associator model (full training set) ===
+
+FPGrowth found 25 rules (displaying top 25)
+
+
+ 8. [Genre=Role-Playing=t]: 1096 ==> [Nominal_User_Score=Medium=t]: 915   <conf:(0.83)> lift:(1.05) lev:(0) conv:(1.21) 
+12. [Rating=E=t]: 3007 ==> [Nominal_User_Score=Medium=t]: 2409   <conf:(0.8)> lift:(1) lev:(0) conv:(1.01) 
+14. [Rating=T=t]: 3086 ==> [Nominal_User_Score=Medium=t]: 2444   <conf:(0.79)> lift:(0.99) lev:(-0) conv:(0.97) 
+15. [Genre=Action=t]: 1616 ==> [Nominal_User_Score=Medium=t]: 1277   <conf:(0.79)> lift:(0.99) lev:(-0) conv:(0.96) 
+16. [Rating=E=t]: 3007 ==> [Nominal_Critic_Score=Medium=t]: 2352   <conf:(0.78)> lift:(1.07) lev:(0.02) conv:(1.23) 
+19. [Rating=T=t]: 3086 ==> [Nominal_Critic_Score=Medium=t]: 2286   <conf:(0.74)> lift:(1.01) lev:(0) conv:(1.03) 
+21. [Genre=Action=t]: 1616 ==> [Nominal_Critic_Score=Medium=t]: 1116   <conf:(0.69)> lift:(0.94) lev:(-0.01) conv:(0.86) 
+22. [Rating=E=t]: 3007 ==> [Nominal_User_Score=Medium=t, Nominal_Critic_Score=Medium=t]: 2054   <conf:(0.68)> lift:(1.08) lev:(0.02) conv:(1.15) 
+24. [Rating=T=t]: 3086 ==> [Nominal_User_Score=Medium=t, Nominal_Critic_Score=Medium=t]: 1979   <conf:(0.64)> lift:(1.01) lev:(0) conv:(1.02) 
+25. [Genre=Action=t]: 1616 ==> [Nominal_User_Score=Medium=t, Nominal_Critic_Score=Medium=t]: 992   <conf:(0.61)> lift:(0.97) lev:(-0) conv:(0.94) 

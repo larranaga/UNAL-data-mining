@@ -1,60 +1,22 @@
 === Run information ===
 
-Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 1000 -T 0 -C 0.1 -D 0.05 -U 1.0 -M 0.1
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 1000 -T 0 -C 0.2 -D 0.05 -U 1.0 -M 0.6
 Relation:     complete_processed_nominal_videogames_data-weka.filters.unsupervised.attribute.Remove-R1-2,4,6-8,10,13-14,18-21-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.Remove-R3-weka.filters.unsupervised.attribute.NominalToBinary-N-Rfirst-last
 Instances:    8935
 Attributes:   1890
               [list of attributes omitted]
 === Associator model (full training set) ===
 
-FPGrowth found 48 rules (displaying top 48)
+FPGrowth found 25 rules (displaying top 25)
 
- 1. [Rating=RP=t]: 1089 ==> [Nominal_User_Score=Medium=t]: 1027   <conf:(0.94)> lift:(1.18) lev:(0.02) conv:(3.48) 
- 2. [Nominal_Critic_Score=Medium=t, Nominal_Global_Sales=0=t]: 1299 ==> [Nominal_User_Score=Medium=t]: 1174   <conf:(0.9)> lift:(1.13) lev:(0.02) conv:(2.07) 
- 3. [Nominal_Critic_Score=Medium=t, Genre=Action=t]: 1116 ==> [Nominal_User_Score=Medium=t]: 992   <conf:(0.89)> lift:(1.11) lev:(0.01) conv:(1.8) 
- 4. [Nominal_Critic_Score=Medium=t, Rating=E=t]: 2352 ==> [Nominal_User_Score=Medium=t]: 2054   <conf:(0.87)> lift:(1.09) lev:(0.02) conv:(1.58) 
- 5. [Nominal_Critic_Score=Medium=t]: 6546 ==> [Nominal_User_Score=Medium=t]: 5670   <conf:(0.87)> lift:(1.08) lev:(0.05) conv:(1.5) 
- 6. [Nominal_Critic_Score=Medium=t, Rating=T=t]: 2286 ==> [Nominal_User_Score=Medium=t]: 1979   <conf:(0.87)> lift:(1.08) lev:(0.02) conv:(1.49) 
  7. [Nominal_User_Score=Medium=t, Rating=E=t]: 2409 ==> [Nominal_Critic_Score=Medium=t]: 2054   <conf:(0.85)> lift:(1.16) lev:(0.03) conv:(1.81) 
  8. [Genre=Role-Playing=t]: 1096 ==> [Nominal_User_Score=Medium=t]: 915   <conf:(0.83)> lift:(1.05) lev:(0) conv:(1.21) 
- 9. [Nominal_Global_Sales=0=t]: 1734 ==> [Nominal_User_Score=Medium=t]: 1435   <conf:(0.83)> lift:(1.04) lev:(0.01) conv:(1.16) 
-10. [Nominal_User_Score=Medium=t, Nominal_Global_Sales=0=t]: 1435 ==> [Nominal_Critic_Score=Medium=t]: 1174   <conf:(0.82)> lift:(1.12) lev:(0.01) conv:(1.46) 
-11. [Nominal_User_Score=Medium=t, Rating=T=t]: 2444 ==> [Nominal_Critic_Score=Medium=t]: 1979   <conf:(0.81)> lift:(1.11) lev:(0.02) conv:(1.4) 
 12. [Rating=E=t]: 3007 ==> [Nominal_User_Score=Medium=t]: 2409   <conf:(0.8)> lift:(1) lev:(0) conv:(1.01) 
-13. [Nominal_User_Score=Medium=t]: 7137 ==> [Nominal_Critic_Score=Medium=t]: 5670   <conf:(0.79)> lift:(1.08) lev:(0.05) conv:(1.3) 
 14. [Rating=T=t]: 3086 ==> [Nominal_User_Score=Medium=t]: 2444   <conf:(0.79)> lift:(0.99) lev:(-0) conv:(0.97) 
 15. [Genre=Action=t]: 1616 ==> [Nominal_User_Score=Medium=t]: 1277   <conf:(0.79)> lift:(0.99) lev:(-0) conv:(0.96) 
 16. [Rating=E=t]: 3007 ==> [Nominal_Critic_Score=Medium=t]: 2352   <conf:(0.78)> lift:(1.07) lev:(0.02) conv:(1.23) 
-17. [Nominal_User_Score=Medium=t, Genre=Action=t]: 1277 ==> [Nominal_Critic_Score=Medium=t]: 992   <conf:(0.78)> lift:(1.06) lev:(0.01) conv:(1.19) 
-18. [Nominal_Global_Sales=0=t]: 1734 ==> [Nominal_Critic_Score=Medium=t]: 1299   <conf:(0.75)> lift:(1.02) lev:(0) conv:(1.06) 
 19. [Rating=T=t]: 3086 ==> [Nominal_Critic_Score=Medium=t]: 2286   <conf:(0.74)> lift:(1.01) lev:(0) conv:(1.03) 
-20. [Nominal_Critic_Score=Low=t]: 1649 ==> [Nominal_User_Score=Medium=t]: 1144   <conf:(0.69)> lift:(0.87) lev:(-0.02) conv:(0.66) 
 21. [Genre=Action=t]: 1616 ==> [Nominal_Critic_Score=Medium=t]: 1116   <conf:(0.69)> lift:(0.94) lev:(-0.01) conv:(0.86) 
 22. [Rating=E=t]: 3007 ==> [Nominal_User_Score=Medium=t, Nominal_Critic_Score=Medium=t]: 2054   <conf:(0.68)> lift:(1.08) lev:(0.02) conv:(1.15) 
-23. [Nominal_Global_Sales=0=t]: 1734 ==> [Nominal_User_Score=Medium=t, Nominal_Critic_Score=Medium=t]: 1174   <conf:(0.68)> lift:(1.07) lev:(0.01) conv:(1.13) 
 24. [Rating=T=t]: 3086 ==> [Nominal_User_Score=Medium=t, Nominal_Critic_Score=Medium=t]: 1979   <conf:(0.64)> lift:(1.01) lev:(0) conv:(1.02) 
 25. [Genre=Action=t]: 1616 ==> [Nominal_User_Score=Medium=t, Nominal_Critic_Score=Medium=t]: 992   <conf:(0.61)> lift:(0.97) lev:(-0) conv:(0.94) 
-26. [Nominal_User_Score=Medium=t, Nominal_Critic_Score=Medium=t]: 5670 ==> [Rating=E=t]: 2054   <conf:(0.36)> lift:(1.08) lev:(0.02) conv:(1.04) 
-27. [Nominal_Critic_Score=Medium=t]: 6546 ==> [Rating=E=t]: 2352   <conf:(0.36)> lift:(1.07) lev:(0.02) conv:(1.04) 
-28. [Nominal_Critic_Score=Medium=t]: 6546 ==> [Rating=T=t]: 2286   <conf:(0.35)> lift:(1.01) lev:(0) conv:(1.01) 
-29. [Nominal_User_Score=Medium=t, Nominal_Critic_Score=Medium=t]: 5670 ==> [Rating=T=t]: 1979   <conf:(0.35)> lift:(1.01) lev:(0) conv:(1.01) 
-30. [Nominal_User_Score=Medium=t]: 7137 ==> [Rating=T=t]: 2444   <conf:(0.34)> lift:(0.99) lev:(-0) conv:(1) 
-31. [Nominal_User_Score=Medium=t]: 7137 ==> [Rating=E=t]: 2409   <conf:(0.34)> lift:(1) lev:(0) conv:(1) 
-32. [Nominal_Critic_Score=Medium=t]: 6546 ==> [Nominal_User_Score=Medium=t, Rating=E=t]: 2054   <conf:(0.31)> lift:(1.16) lev:(0.03) conv:(1.06) 
-33. [Nominal_Critic_Score=Medium=t]: 6546 ==> [Nominal_User_Score=Medium=t, Rating=T=t]: 1979   <conf:(0.3)> lift:(1.11) lev:(0.02) conv:(1.04) 
-34. [Nominal_User_Score=Medium=t]: 7137 ==> [Nominal_Critic_Score=Medium=t, Rating=E=t]: 2054   <conf:(0.29)> lift:(1.09) lev:(0.02) conv:(1.03) 
-35. [Nominal_User_Score=Medium=t]: 7137 ==> [Nominal_Critic_Score=Medium=t, Rating=T=t]: 1979   <conf:(0.28)> lift:(1.08) lev:(0.02) conv:(1.03) 
-36. [Nominal_User_Score=Medium=t, Nominal_Critic_Score=Medium=t]: 5670 ==> [Nominal_Global_Sales=0=t]: 1174   <conf:(0.21)> lift:(1.07) lev:(0.01) conv:(1.02) 
-37. [Nominal_User_Score=Medium=t]: 7137 ==> [Nominal_Global_Sales=0=t]: 1435   <conf:(0.2)> lift:(1.04) lev:(0.01) conv:(1.01) 
-38. [Nominal_Critic_Score=Medium=t]: 6546 ==> [Nominal_Global_Sales=0=t]: 1299   <conf:(0.2)> lift:(1.02) lev:(0) conv:(1.01) 
-39. [Nominal_Critic_Score=Medium=t]: 6546 ==> [Nominal_User_Score=Medium=t, Nominal_Global_Sales=0=t]: 1174   <conf:(0.18)> lift:(1.12) lev:(0.01) conv:(1.02) 
-40. [Nominal_User_Score=Medium=t]: 7137 ==> [Genre=Action=t]: 1277   <conf:(0.18)> lift:(0.99) lev:(-0) conv:(1) 
-41. [Nominal_User_Score=Medium=t, Nominal_Critic_Score=Medium=t]: 5670 ==> [Genre=Action=t]: 992   <conf:(0.17)> lift:(0.97) lev:(-0) conv:(0.99) 
-42. [Nominal_Critic_Score=Medium=t]: 6546 ==> [Genre=Action=t]: 1116   <conf:(0.17)> lift:(0.94) lev:(-0.01) conv:(0.99) 
-43. [Nominal_User_Score=Medium=t]: 7137 ==> [Nominal_Critic_Score=Medium=t, Nominal_Global_Sales=0=t]: 1174   <conf:(0.16)> lift:(1.13) lev:(0.02) conv:(1.02) 
-44. [Nominal_User_Score=Medium=t]: 7137 ==> [Nominal_Critic_Score=Low=t]: 1144   <conf:(0.16)> lift:(0.87) lev:(-0.02) conv:(0.97) 
-45. [Nominal_Critic_Score=Medium=t]: 6546 ==> [Nominal_User_Score=Medium=t, Genre=Action=t]: 992   <conf:(0.15)> lift:(1.06) lev:(0.01) conv:(1.01) 
-46. [Nominal_User_Score=Medium=t]: 7137 ==> [Rating=RP=t]: 1027   <conf:(0.14)> lift:(1.18) lev:(0.02) conv:(1.03) 
-47. [Nominal_User_Score=Medium=t]: 7137 ==> [Nominal_Critic_Score=Medium=t, Genre=Action=t]: 992   <conf:(0.14)> lift:(1.11) lev:(0.01) conv:(1.02) 
-48. [Nominal_User_Score=Medium=t]: 7137 ==> [Genre=Role-Playing=t]: 915   <conf:(0.13)> lift:(1.05) lev:(0) conv:(1.01) 
-

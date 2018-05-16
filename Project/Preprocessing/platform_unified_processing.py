@@ -146,8 +146,8 @@ developers = videogames_data["Developer"].unique()
 for developer in developers:
     count[developer] = {
         "user_score" : 0.0,
-        "user_count": 0,
-        "critic_score": 0.0,
+        "user_count": 0, 
+        "critic_score": 0.0, 
         "critic_count": 0
     }
 
