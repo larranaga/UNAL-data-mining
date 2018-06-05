@@ -1,0 +1,300 @@
+Critic_Score
+
+    High
+        User_Score
+        High
+            Rating
+            E
+                Publisher
+                'Nintendo' 'Sony Computer Entertainment' 'Konami Digital Entertainment'
+                'Sony Computer Entertainment Europe' 'Activision' 'Electronic Arts'
+                'Sega' 'Codemasters' 'Namco Bandai Games' 'Quest' 'Ubisoft' 'Telegames'
+                'Microsoft Game Studios' 'Psygnosis' 'Disney Interactive Studios'
+                'Tomy Corporation' 'NewKidCo' 'Vivendi Games'
+            
+            E10+
+                Ya está bien con 9 entradas
+            
+            
+            M
+                Publisher
+                'Take-Two Interactive' 'Konami Digital Entertainment'
+                'Sony Computer Entertainment Europe' 'Virgin Interactive'
+                'Sony Computer Entertainment' 'Vivendi Games' 'Electronic Arts'
+                'Namco Bandai Games' 'Capcom' 'Microsoft Game Studios' 'Activision'
+                'Atlus' 'Nintendo' 'Havas Interactive' 'THQ' 'Rising Star Games'
+                'Midway Games' 'Ubisoft' 'Atari' 'Empire Interactive' 'Eidos Interactive'
+            
+            
+            RP
+                Ya está bien con 1 entrada
+            
+            
+            
+            T
+                Genre
+                    'Action', 'Adventure', 'Fighting', 'Misc', 'Platform', 'Racing', 'Role-Playing', 'Shooter', 'Simulation', 'Sports', 'Strategy'
+
+
+        Low
+            Genre
+            Action
+            Racing
+            Role-Playing
+            Shooter
+            Simulation
+            Sports
+
+
+        Medium
+            Rating
+            E
+                Genre
+                'Action', 'Adventure', 'Misc', 'Platform', 'Puzzle', 'Racing', 'Role-Playing', 'Shooter', 'Simulation', 'Sports', 'Strategy'    
+            
+            M
+                Genre
+                Action', 'Adventure', 'Racing', 'Role-Playing', 'Shooter', 'Strategy'
+            
+            
+            RP
+                Ya está con 4 juegos
+            
+            
+            T
+                Genre
+                'Action', 'Fighting', 'Misc', 'Platform', 'Racing', 'Role-Playing', 'Shooter', 'Simulation', 'Sports', 'Strategy'
+
+
+        Worst
+            Ya son 2 juegos
+
+    Low
+        User_Score
+        High
+            Ya son 34 juegos
+
+        Low
+            Rating
+            E
+                Genre
+                'Action', 'Adventure', 'Misc', 'Platform', 'Puzzle', 'Racing', 'Shooter', 'Simulation', 'Sports', 'Strategy'
+            
+            M
+                Developer
+                '8Monkey Labs', 'Access Games', 'Blueside', 'Capcom', 'Cauldron Ltd.', 'Cavia Inc.', 'CiRCLE', 
+                'City Interactive', 'Creative Assembly', 'Cyanide, Cyanide Studios', 'Cyberlore Studios', 'DC Studios', 
+                'Danger Close', 'Eden Studios', 'Gaijin Entertainment', 'Game Republic', 'Gearbox Software, 3D Realms', 
+                'Guildford Studio', 'Heavy Iron Studios', 'Human Entertainment', 'K2 LLC', 'Kylotonn', 'Master Creating', 
+                'Mucky Foot Productions', 'Neverland', 'Opus', 'Paradox Development', 'Piranha Bytes', 'Pivotal Games', 
+                'Point of View', 'Reality Pump', 'Rebellion', 'Reflections Interactive', 'Reloaded Productions, Reloaded Games Inc.', 
+                'Secret Level', 'Secret Stash Games', 'Slant Six', 'Spark Unlimited, comcept', 'Spiders', 'Spike Chunsoft', 'Stalker Entertainment', 
+                'Team Ninja', 'Techland', 'Telltale Games', 'Ubisoft', 'Ubisoft Shanghai', 'WayForward', 'Z-Axis, Ltd.'            
+
+                El resto
+            
+            
+            RP
+                Ya son 4
+            
+
+            T
+                Genre
+                ['Action', 'Adventure', 'Fighting', 'Misc', 'Platform', 'Puzzle', 'Racing', 'Role-Playing', 'Shooter', 'Simulation', 'Sports', 'Strategy']
+
+                Se debe expandir mas
+
+
+
+        Medium
+            Developer
+                Activision
+                    Publisher ['Activision', 'Activision Value', 'Focus Multimedia']
+
+
+                Konami Digital Entertainment
+                    Ya está aunque son 391 pero no se vendieron muy bien la verdad
+
+
+                The rest
+                    Rating ['E', 'E10+', 'M', 'RP', 'T']
+
+
+
+        Worst
+            Rating
+            E
+                Publisher ['Atari', 'Electronic Arts']
+
+                Y el resto
+            
+            M
+                Ya esta con 9 juegos
+            
+            RP
+                Ya esta con 2 juegos
+            
+            
+            T
+                Ya esta con 14 juegos
+
+
+
+    Medium
+        User_Score
+        High
+            Rating
+            E
+                Publisher 
+                ['Activision', 'Capcom', 'Electronic Arts', 'Infogrames', 'Konami Digital Entertainment', 'Nintendo', 'Sony Computer Entertainment',
+                 'THQ', 'Tecmo Koei', 'Ubisoft']
+
+                 Y el resto
+            
+            
+            K-A
+                Ya está con 1 juego
+            
+            
+            M
+                Publisher ['Capcom', 'Eidos Interactive', 'Midway Games', 'Seta Corporation']
+
+                Y el resto
+            
+            RP
+                Ya está con 30~ juegos
+
+            T
+                Ya está, toca inventarse algo :(
+
+
+
+        Low
+            Rating
+            E
+                Genre ['Action', 'Adventure', 'Misc', 'Platform', 'Puzzle', 'Racing', 'Role-Playing', 'Simulation', 'Sports', 'Strategy']
+            
+            
+            E10+
+                Publisher ['Activision', 'D3Publisher', 'Disney Interactive Studios', 'Electronic Arts', 'GameMill Entertainment', 
+                'Konami Digital Entertainment', 'Microsoft Game Studios', 'Midway Games', 'Namco Bandai Games', 'Nintendo', 'Sony Computer Entertainment',
+                 'THQ', 'Take-Two Interactive', 'Tecmo Koei', 'Ubisoft', 'Unknown', 'Warner Bros. Interactive Entertainment']
+
+            
+            M
+                Developer ['BioWare', 'Camouflaj, LLC', 'Capcom', 'Codemasters', 'EA Chicago', 'Eden Studios', 'Epic Games', 'GameCo', 'Gust',
+                 'Hangar 13', 'Hijinx Studios', 'Interplay', 'Kalypso', 'Kaos Studios', 'Lionhead Studios', 'Overkill Software', 'Realmforge Studios',
+                  'Reflections Interactive', 'Remedy Entertainment', 'Rocksteady Studios', 'Ruffian Games', 'Sledgehammer Games', 'Tantalus Interactive',
+                   'Techland', 'Telltale Games', 'Treyarch', 'Turtle Rock Studios', 'Ubisoft Montreal', 'VIS Entertainment', 'Visceral Games', 
+                   'Volition Inc.']
+            
+            RP
+                Ya está con 2 juegos
+            
+            
+            T
+                Developer ['1st Playable Productions', '3DO', '3d6 Games', '5000ft', 'Arc System Works', 'Arika', 'Atomic Games', 'Backbone Entertainment', 
+                'Best Way', 'Black Box', 'Blizzard Entertainment', 'Bungie Software, Bungie', 'Bunkasha Publishing', 'Capcom', 'Climax Group', 
+                'Crafts & Meister', 'Creative Assembly', 'Criterion Games', 'Cyanide', 'DTP Entertainment', 'Day 1 Studios', 'Dreamworks Interactive', 
+                'EA Canada', 'EA DICE', 'Eighting, Genius Sonority Inc.', 'Eutechnyx', 'FireFly Studios', 'FreeStyleGames', 'From Software', 
+                'Gaijin Entertainment', 'Harmonix Music Systems', 'Hello Games', 'Jaleco Entertainment', 'Kemco', 'Kodiak Interactive', 'Lionhead Studios',
+                 'LucasArts, BioWare', 'Maxis', 'Namco', 'Next Level Games, Nintendo', 'Nippon Ichi Software', 'Nitro Games', 'Obsidian Entertainment', 
+                 'Oddworld Inhabitants', 'Omega Force', 'Other Ocean Interactive', 'Radical Entertainment', 'Red Storm Entertainment', 
+                 'Reflections Interactive', 'SCEE London Studio', 'SNK', 'Silver Wish Games', 'Spellbound', 'Splash Damage', 'Square Enix', 
+                 'Stormregion', 'Takara Tomy', 'Targem Games, TopWare Interactive', 'Terminal Reality', 'Terminal Reality, 4mm Games', 'The Sims Studio', 
+                 'Ubisoft', 'Vicarious Visions', 'Wargaming.net', 'Xpec', 'Yuke s', 'Zed Two Limited', 'Zoom', 'iNiS']
+
+
+
+
+        Medium
+            Developer
+            Capcom
+
+            
+            
+            
+            Electronic Arts
+            
+            
+            
+            Namco Bandai Games
+            
+            
+            
+            Nintendo
+            
+            
+            
+            
+            Sega
+            
+            
+            
+            
+            Sony Computer Entertainment
+            
+            
+            
+            
+            
+            Tecmo Koei
+            
+            
+            
+            Ubisoft
+
+
+            El resto
+
+                            inventar todo
+
+
+        Worst
+            Publisher
+            Activision
+                Ya está con 5 juegos
+            
+            Electronic Arts
+                Ya está con 8 juegos
+            
+            Sony Computer Entertainment
+                Ya está con 3 juegos
+            
+            Ubisoft
+                Ya está con 3 juegos
+
+
+    Worst
+        User_Score
+        High
+            Developer = Prolific
+            Genre = Racing 
+            Publisher  = TDK Mediactive
+            Rating = E
+            Year_of_Release = 2002
+
+
+        Low
+            Rating
+            E  
+                Ya está con 30 juegos
+            
+            E10+
+                Ya está con 9 juegos
+            
+            M
+                Ya está con 18 juegos
+            
+            RP
+                Ya está con 1 juego
+                        
+            T
+                Ya está con 20 juegos
+
+
+        Medium
+            Ya está con 30 juegos
+
+        Worst
+            Ya está con 105 juegos

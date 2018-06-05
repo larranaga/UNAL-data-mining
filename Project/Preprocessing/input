@@ -1,0 +1,252 @@
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+High,High,E,Nintendo
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+High,High,E,Sony Computer Entertainment
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+High,High,E,Sega
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+High,High,E,Activision
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+High,High,E,Microsoft Game Studios
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+High,High,E,Electronic Arts
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+High,High,E,Ubisoft
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+High,High,E,Microsoft Game Studios
+Nominal_Critic_Score,Nominal_User_Score,Rating
+High,High,E10+
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+High,High,M,Sony Computer Entertainment
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+High,High,M,Ubisoft
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+High,High,M,Nintendo
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+High,High,M,Atari
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+High,High,M,Midway Games
+Nominal_Critic_Score,Nominal_User_Score,Rating
+High,High,RP
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,High,T,Action
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,High,T,Adventure
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,High,T,Fighting
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,High,T,Misc
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,High,T,Platform
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,High,T,Shooter
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,High,T,Action
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,High,T,Sports
+Nominal_Critic_Score,Nominal_User_Score,Genre
+High,Low,Action
+Nominal_Critic_Score,Nominal_User_Score,Genre
+High,Low,Role-Playing
+Nominal_Critic_Score,Nominal_User_Score,Genre
+High,Low,Shooter
+Nominal_Critic_Score,Nominal_User_Score,Genre
+High,Low,Simulation
+Nominal_Critic_Score,Nominal_User_Score,Genre
+High,Low,Sports
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,E,Action
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,E,Adventure
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,E,Platform
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,E,Racing
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,E,Shooter
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,E,Sports
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,M,Action
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,M,Adventure
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,M,Shooter
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,M,Strategy
+Nominal_Critic_Score,Nominal_User_Score,Rating
+High,Medium,RP
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,T,Action
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,T,Fighting
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,T,Shooter
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,T,Sports
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+High,Medium,T,Strategy
+Nominal_Critic_Score,Nominal_User_Score
+High,Worst
+Nominal_Critic_Score,Nominal_User_Score
+Low,High
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Low,Low,E,Action
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Low,Low,E,Adventure
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Low,Low,E,Puzzle
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Low,Low,E,Shooter
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Low,Low,E,Simulation
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Low,Low,E,Sports
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Low,Low,M,Blueside
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Low,Low,M,Capcom
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Low,Low,M,Ubisoft
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Low,Low,M,Opus
+Nominal_Critic_Score,Nominal_User_Score,Rating
+Low,Low,RP
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Low,Low,T,Action
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Low,Low,T,Adventure
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Low,Low,T,Fighting
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Low,Low,T,Platform
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Low,Low,T,Shooter
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Low,Low,T,Sports
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Low,Low,T,Strategy
+Nominal_Critic_Score,Nominal_User_Score,Developer,Publisher
+Low,Medium,Activision,Activision
+Nominal_Critic_Score,Nominal_User_Score,Developer,Publisher
+Low,Medium,Activision,Activision Value
+Nominal_Critic_Score,Nominal_User_Score,Developer
+Low,Medium,Konami Digital Entertainment
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Low,Worst,E,Atari
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Low,Worst,E,Electronic Arts
+Nominal_Critic_Score,Nominal_User_Score,Rating
+Low,Worst,M
+Nominal_Critic_Score,Nominal_User_Score,Rating
+Low,Worst,RP
+Nominal_Critic_Score,Nominal_User_Score,Rating
+Low,Worst,T
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,High,E,Activision
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,High,E,Capcom
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,High,E,Electronic Arts
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,High,E,Nintendo
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,High,E,Sony Computer Entertainment
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,High,E,Ubisoft
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,High,M,Ubisoft
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,High,M,Capcom
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,High,M,Midway Games
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,High,M,Seta Corporation
+Nominal_Critic_Score,Nominal_User_Score,Rating,
+Medium,High,RP
+Nominal_Critic_Score,Nominal_User_Score,Rating,
+Medium,High,T
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Medium,Low,E,Action
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Medium,Low,E,Adventure
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Medium,Low,E,Puzzle
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Medium,Low,E,Sports
+Nominal_Critic_Score,Nominal_User_Score,Rating,Genre
+Medium,Low,E,Strategy
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,Low,E10+,Activision
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,Low,E10+,Disney Interactive Studios
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,Low,E10+,Electronic Arts
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,Low,E10+,Microsoft Game Studios
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,Low,E10+,Ubisoft
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,Low,E10+,Nintendo
+Nominal_Critic_Score,Nominal_User_Score,Rating,Publisher
+Medium,Low,E10+,Sony Computer Entertainment
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Medium,Low,M,BioWare
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Medium,Low,M,Capcom
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Medium,Low,M,EA Chicago
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Medium,Low,M,Epic Games
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Medium,Low,M,Visceral Games
+Nominal_Critic_Score,Nominal_User_Score,Rating
+Medium,Low,RP
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Medium,Low,T,3DO
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Medium,Low,T,SNK
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Medium,Low,T,Zoom
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Medium,Low,T,Ubisoft
+Nominal_Critic_Score,Nominal_User_Score,Rating,Developer
+Medium,Low,T,Nintendo
+Nominal_Critic_Score,Nominal_User_Score,Developer
+Medium,Medium,Capcom
+Nominal_Critic_Score,Nominal_User_Score,Developer
+Medium,Medium,Electronic Arts
+Nominal_Critic_Score,Nominal_User_Score,Developer
+Medium,Medium,Namco Bandai Games
+Nominal_Critic_Score,Nominal_User_Score,Developer
+Medium,Medium,Nintendo
+Nominal_Critic_Score,Nominal_User_Score,Developer
+Medium,Medium,Sega
+Nominal_Critic_Score,Nominal_User_Score,Developer
+Medium,Medium,Sony Computer Entertainment
+Nominal_Critic_Score,Nominal_User_Score,Developer
+Medium,Medium,Ubisoft
+Nominal_Critic_Score,Nominal_User_Score,Publisher
+Medium,Worst,Ubisoft
+Nominal_Critic_Score,Nominal_User_Score,Publisher
+Medium,Worst,Activision
+Nominal_Critic_Score,Nominal_User_Score,Publisher
+Medium,Worst,Electronic Arts
+Nominal_Critic_Score,Nominal_User_Score,Publisher
+Medium,Worst,Sony Computer Entertainment
+Nominal_Critic_Score,Nominal_User_Score
+Worst,High
+Nominal_Critic_Score,Nominal_User_Score,Rating
+Worst,Low,E
+Nominal_Critic_Score,Nominal_User_Score,Rating
+Worst,Low,E10+
+Nominal_Critic_Score,Nominal_User_Score,Rating
+Worst,Low,M
+Nominal_Critic_Score,Nominal_User_Score,Rating
+Worst,Low,RP
+Nominal_Critic_Score,Nominal_User_Score,Rating
+Worst,Low,T
+Nominal_Critic_Score,Nominal_User_Score
+Worst,Medium
+Nominal_Critic_Score,Nominal_User_Score
+Worst,Worst
